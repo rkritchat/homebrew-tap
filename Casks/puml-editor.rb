@@ -1,6 +1,6 @@
 cask "puml-editor" do
-  version "1.0"
-  sha256 "a66c6a98bfefc73bb8db4fb21d4110a727fe3844ba3614ccce8eef7888d621f3"
+  version "1.1"
+  sha256 "aeb9517fb3dcdb57aaf35ced4db193fce93861b7a0dabca6038b3fe4e83a6a05"
 
   url "https://github.com/rkritchat/puml-editor-releases/releases/download/v#{version}/PumlEditor-#{version}.dmg"
   name "Puml Editor"
