@@ -18,9 +18,8 @@ cask "puml-editor" do
   app "Puml Editor.app"
 
   # The app is ad-hoc signed, not notarized: remove the download quarantine so it opens normally.
-  postflight do
-    system_command "/usr/bin/xattr",
-                   args: ["-dr", "com.apple.quarantine", "#{appdir}/Puml Editor.app"]
+  postflight_steps do
+    run "/usr/bin/xattr", args: ["-dr", "com.apple.quarantine", "{{appdir}}/Puml Editor.app"]
   end
 
   zap trash: [
